@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "9f6ab5fd-0a68-41c3-b619-aedab2622dbd",
+		"name": "Parcial - Slime Rancher",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48398355",
+		"_collection_link": "https://tomas-jmartinez-1588754.postman.co/workspace/aa917832-5da5-4a8a-8f28-0fd93f1e35cc/collection/48398355-9f6ab5fd-0a68-41c3-b619-aedab2622dbd?action=share&source=collection_link&creator=48398355"
+	},
+	"item": [
+		{
+			"name": "Slimes — list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/slr/slimes?q=pink",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"slr",
+						"slimes"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "pink"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Slimes — by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/slr/slimes",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"slr",
+						"slimes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Foods — list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/slr/foods",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"slr",
+						"foods"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Locations — list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/slr/locations",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"slr",
+						"locations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Toys — list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/slr/toys",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"slr",
+						"toys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Favorites — create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"entityType\":\"slime\", \"entityId\":\"1\", \"name\":\"Pink Slime\", \"notes\":\"Favorito\" }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/favorites",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"favorites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Favorites — list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/favorites",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"favorites"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
